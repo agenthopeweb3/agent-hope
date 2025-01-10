@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #141414;
+  --foreground: #ededed;
+}
+
+body {
+  color: var(--foreground);
+  background: black;
+  font-family: "Roboto Mono", serif;
+}
+
+.image-fade {
+  position: relative;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.fade-bottom {
+  display: block;
+  width: 100%; /* Ensure the image scales properly */
+  height: auto;
+
+  /* Gradient mask for fading effect */
+  -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
