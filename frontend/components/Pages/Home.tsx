@@ -33,7 +33,7 @@ export function Home() {
                 showCursor={false}
                 typeSpeed={50}
                 strings={[
-                  "Welcome to hope-tech. I&apos;m Hope, your data analytic agent for solana contracts.",
+                  "Welcome to hope-tech. I'm Hope, your data analytic agent for solana contracts.",
                 ]}
               />
             </h1>
